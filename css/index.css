@@ -1,0 +1,341 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(226, 226, 226, 0.904);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/*
+design for header sections 
+*/
+
+header{
+    text-align: center;
+    /* background-color: rgb(44, 93, 167); */
+    background-color: rgb(5, 43, 99) ;
+    padding: 16px;
+}
+
+header h1{
+    color: white;
+    display: inline;
+    border: 2px solid white;
+    border-radius: 16px;
+    padding: 1px 12px;
+}
+
+header img{
+    width: 70px;
+    height: 50px;
+    float: left;
+    border: 1px solid white;
+    border-radius: 16px;
+}
+
+.main-nav{
+    position: sticky;
+    top: 0;
+    background-color: rgb(5, 43, 99);
+    overflow: hidden;
+}
+
+.main-nav a{
+    float: left;
+    display: block;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-nav a.active{
+    color: black;
+    background-color: rgb(157, 157, 172);
+    border-radius: 1px;
+}
+
+.main-nav .icon{
+   display: none;
+}
+
+.main-nav a:hover{
+    color: black;
+    background-color: rgb(157, 157, 172);
+    border-radius: 1px;
+}
+
+/*
+end of design for header sections 
+*/
+
+footer{
+    background-color: rgb(5, 43, 99) ;
+    padding: 16px;
+    margin-top: 20px;
+}
+footer h2{
+    color: white;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+
+footer p span{
+    font-size: 27px;
+}
+
+#contact ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    
+}
+#contact img{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    
+}
+
+#contact ul li{
+    display: inline-block;
+    padding: 8px;
+    margin: 10px 10px 0px 0px;
+    border-radius: 7px;
+    
+}
+
+#contact ul li a{
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 6px;
+    padding: 0;
+    display: block;
+}
+
+#contact li.vl{
+    border-left: 6px solid rgb(44, 93, 167);
+    height: 25px;
+    padding: 0;
+    margin: 10px 10px 0px 0px;
+}
+
+#contact li.num span{
+    font-weight: bold;
+}
+
+#contact li.num{
+    border: none;
+    margin: 10px 10px 0px 0px;
+    font-weight: bold;
+    color: rgb(231, 227, 227);
+}
+
+/*
+Designs for primary sections 
+*/
+#home{
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    border-right: 6px solid rgb(44, 93, 167);
+    padding: 20px;
+}
+
+#news{
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    border-right: 6px solid rgb(44, 93, 167);
+    padding: 20px;
+}
+
+#subscribe{
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    border-right: 6px solid rgb(44, 93, 167);
+    padding: 20px;
+}
+
+#subscribe form input{
+    width: 80px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 20px auto;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(108, 106, 196, 0.904);
+    transition: width 0.4s ease-in-out;
+}
+
+#subscribe form input:focus{
+    outline: 2px solid rgba(108, 106, 196, 0.904);
+    border-radius: 4px;
+    width: 25%;
+}
+/*
+End of designs for primary sections 
+*/
+
+#home h2{
+    text-align: center;
+}
+/*
+design for vision sections 
+*/
+#vision{
+    border: 1px solid rgba(214, 209, 209, 0.904);
+    margin: 0px 0px 10px 0px;
+}
+
+#vision-header{
+    text-align: center;   
+}
+
+#vision p{
+    padding: 14px;
+}
+
+/*
+End of design for vision sections 
+*/
+
+/*
+design for mission sections 
+*/
+#mission{
+    border: 1px solid rgba(214, 209, 209, 0.904);
+    margin: 0px 0px 10px 0px;
+}
+
+#mission p{
+    padding: 14px 14px 0px 14px;
+}
+
+#current{
+    border: 1px solid rgba(214, 209, 209, 0.904);
+    margin: 0px 0px 10px 0px;
+}
+/*
+design for mission sections 
+*/
+
+hr{
+    background-color: rgba(214, 209, 209, 0.904) ;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+design for updates section 
+*/
+#updates{
+    border: 1px solid rgba(214, 209, 209, 0.904);
+    margin: 0px 0px 10px 0px;
+    
+}
+
+#updates nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#updates nav li {
+    display: inline-block;
+    margin: 0px 10px 20px 10px;
+    padding: 16px;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px rgba(131, 131, 131, 0.808);
+    border-radius: 7px;
+    border: 1px solid rgba(108, 106, 196, 0.904);
+    box-sizing: border-box;
+}
+
+#updates nav li:hover{
+    /* background-color: rgba(108, 106, 196, 0.904); */
+    box-shadow: 5px 5px 10px rgba(52, 40, 223, 0.808);
+}
+
+#updates li p{
+    font-weight: bold;
+}
+
+#updates nav li img{
+    padding: 10px;
+    max-width: 100%;
+    
+}
+
+@media screen and (max-width: 500px){
+
+    .main-nav{
+        position: static;
+        top: 0;
+    }
+
+    .main-nav a:not(:first-child){
+       display: none;
+        
+    }
+
+    .main-nav a.icon{
+        float: right;
+        display: block; 
+    }
+
+    #updates nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #subscribe form input:focus{
+        outline: 2px solid rgba(108, 106, 196, 0.904);
+        border-radius: 4px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .main-nav.responsive {
+        position: relative;
+    }
+
+    .main-nav.responsive a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .main-nav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

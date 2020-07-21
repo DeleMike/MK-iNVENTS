@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/intersect_logo.png">
+
+    <!--code to toggle the nav bar. also making it responsive-->
+    <script>
+        function toggleNavBar() {
+            var x = document.getElementById("mainNav");
+            if(x.className == "main-nav"){
+                x.className += " responsive";
+            }else{
+                x.className = "main-nav"
+            }
+        }
+    </script>
+
+    <title>MK iNVENTS</title>
+</head>
+
+<body>
+    <header>
+        <img src="/images/album6.png" alt="logo">
+        <h1>MK iNVENTS</h1>
+    </header>
+
+    <hr>
+
+    <div class="main-nav" id="mainNav">
+        <a class="active" href="#home" id="first-link">Home</a>
+            <a href="#">Services</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavBar()">
+                <i class="fa fa-bars"></i>    
+            </a>
+                <!-- <img src="/images/insta.jpeg" width="25px" height="18px" alt="icon"></a> -->
+        
+    </div>
+
+    <section id="home">
+        <h2>Welcome to MK iNVENTS</h2>
+        <div id="vision">
+            <h3 id="vision-header">Our Vision</h3>
+            <p>To help Nigeria build a better future
+                so that the future generations can have a better place to live.</p>
+        </div>
+        <div id="mission">
+            <h3 id="vision-header">Our Mission</h3>
+            <p>To build a better future we are poised to use software
+                solutions and possibilites to that would solve the common problems of our nation. </p>
+            <p>We are also going to breed future talents; by creating football academies,
+                Music talent shows, political debate shows and a lots more to primarily help
+                our Nigerian people. </p>
+        </div>
+    </section>
+
+    <section id="news">
+        <div id="updates">
+            <h2 id="vision-header">Updates</h2>
+            <hr><br>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="/images/album6.png" alt="logo"></a>
+                        <hr>
+                        <p>Nigeria ranks among the world top 10 global industries.</p>
+                    </li>
+                    <li><a href="#"><img src="/images/album6.png" alt="logo"></a>
+                        <hr>
+                        <p>Is skipping breakfast healthy?</p>
+                    </li>
+                    <li><a href="#"><img src="/images/album6.png" alt="logo"></a>
+                                <hr>
+                                <p>How do we solve this pandemic?</p>
+                                </p>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </section>
+
+    <section id="subscribe">
+        <h2>Join Today!</h2>
+        <p>Subcribe to our newsletter for latest updates about PlayGround.</p>
+        <form action="">
+            <input title="Type in your email and press Enter key to join" type="email" name="email" id="email" placeholder="Type email & hit enter to join">
+        </form>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact us</h2>
+        <div>
+            <ul>
+                <li><a href="#"><img class ="contact-img" src="/images/fb.jpeg" alt="Facebook contact"></a</li>
+                <li><a href="#"><img class ="contact-img" src="/images/insta.jpeg" alt="Instagram contact"></a></li>
+                <li><a href="#"><img class ="contact-img" src="/images/twitter.jpeg" alt="Twitter contact"></a></li>
+                <li class="vl"></li>
+                <li class="num"><span>Call us: </span> 0800 900 7000</li>
+            </ul>
+            <p class="copyright"><span>&copy;</span> PlayGround 2020</p>   
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
